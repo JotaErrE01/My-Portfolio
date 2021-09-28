@@ -1,0 +1,29 @@
+.mainContent{
+    margin-top: $mt-5;
+    // display: flex;
+
+    @include grid(2, 50%);
+
+    @include tablet{
+
+    }
+}
+
+.me_image{
+    text-align: center;
+    img{
+        border-radius: 50%;
+        border: 1px solid darken($color: $primary, $amount: 50);
+        width: 35rem;
+    }
+}
+
+.aboutMe__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // text-align: center;
+    // h2 {
+    //     font-size: ;
+    // }
+}
