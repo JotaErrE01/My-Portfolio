@@ -2,10 +2,30 @@
     ul{
         column-gap: 1.5rem;
 
-        li{
-            max-width: fit-content;
-            margin-left: auto;
-            margin-right: auto;
+        
+    }
+}
+
+.project{
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+
+    p{
+        font-size: 1.25rem;
+        line-height: 1.3;
+        margin-left: 1rem;
+        max-width: 15rem;
+        text-align: start;
+
+        @include tablet{
+            font-size: 1.4rem;
+            max-width: 20rem;
+        }
+
+        @include desktop{
+            font-size: 1.7rem;
+            max-width: 25rem;
         }
     }
 }
