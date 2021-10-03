@@ -9,82 +9,206 @@
 </head>
 <body>
     <header class="headerContent">
+        <div class="header__modal d-none">
+            <img class="modal__close" src="./assets/close_small.svg" alt="Close">
+            <div class="header__modal-content">
+                <a id="nav__mobile" href="#about_me">Acerca de Mí</a>
+                <a id="nav__mobile" href="#my_skills">Habilidades</a>
+                <a id="nav__mobile" href="#tools">Herramientas</a>
+                <a id="nav__mobile" href="#projects">Proyectos</a>
+                <a id="nav__mobile" href="#contact">Contáctame</a>
+            </div>
+        </div>
+
         <div class="headerContainer">
             <div class="header__title">
                 <h1>Hola! Soy Jonathan</h1>
                 <p>Junior Front End Developer</p>
             </div>
-    
-            <nav class="headerNav">
-                <a href="https://www.linkedin.com/in/jonathan-ruiz-b810531bb/">
-                    <img src="./assets/LinkedIN.svg" alt="LinkedIn" />
-                </a>
-                
-                <a href="https://github.com/JotaErrE01">
-                    <img src="./assets/Github.svg" alt="Github" />
-                </a>
-                
-                <a href="https://twitter.com/Jota_ErrE_01">
-                    <img src="./assets/Twitter.svg" alt="Twitter" />
-                </a>
-            </nav>
+
+            <div class="menu">
+                <img src="./assets/hamburger.svg" alt="hamburger menu">
+            </div>    
         </div>
     
         <nav class="headerNav nav-styles">
-            <a href="/">Acerca de Mí</a>
+            <a href="#about_me">Acerca de Mí</a>
             
-            <a href="/">Mis Habilidades</a>
+            <a href="#my_skills">Mis Habilidades</a>
             
-            <a href="/">Herramientas</a>
+            <a href="#tools">Herramientas</a>
             
-            <a href="/">Mis Proyectos</a>
+            <a href="#projects">Mis Proyectos</a>
+
+            <a href="#contact">Contáctame</a>
         </nav>
     </header>
 
-    <main class="container">
+    <main class="container" id="about_me">
         <div class="mainContent">
             <div class="me_image">
                 <img src="https://pbs.twimg.com/profile_images/733479735993503744/_Th2hbRs_400x400.jpg" alt="My Image">
             </div>
 
             <div class="aboutMe__info">
-                <h2>Acerca de Mí</h2>
-                <p>Soy estudiante de 6to semestre en la universidad de Guayaquil (Ecuador) buscando una oportunidad para poner a pruba mis conocimientos.  Si alguna de mis habilidades son de tu interes, no dudes en contactarme en alguna de mis redes sociales.</p>
+                <h2 class="aboutMe__title">Acerca de Mí <img src="./assets/User.svg"></img></h2>
+                <p>Soy estudiante de 6to semestre en la Universidad de Guayaquil (Ecuador) buscando una oportunidad para poner a pruba mis conocimientos.  Si alguna de mis habilidades son de tu interes, no dudes en contactarme en alguna de mis redes sociales.</p>
+                <button class="btn btn-primary">Mi Curriculum</button>
             </div>
         </div>
     </main>
 
-    <section>
+    <section class="container section__content" id="my_skills">
         <h2>Mis Habilidades</h2>
 
-        <div class="skills">
-            <ul>
+        <div>
+            <ul class="section__elements">
                 <li>
                     <img src="./assets/html5.svg" alt="html">
-                    <p>HTML</p>
+                    <p class="section__name">HTML</p>
                 </li>
                 <li>
                     <img src="./assets/css3.svg" alt="css">
-                    <p>CSS</p>
+                    <p class="section__name">CSS</p>
                 </li>
                 <li>
-                    <img src="./assets/Group 1.svg" alt="js">
-                    <p>Javascript</p>
+                    <img src="./assets/js.svg" alt="js">
+                    <p class="section__name">Javascript</p>
                 </li>
                 <li>
-                    <img src="./assets/Group.svg" alt="jest">
-                    <p>Testing</p>
+                    <img src="./assets/jest.svg" alt="jest">
+                    <p class="section__name">Testing</p>
                 </li>
                 <li>
-                    <img src="./assets/git-svgrepo-com 1.svg" alt="git">
-                    <p>Git</p>
+                    <img src="./assets/Git.svg" alt="git">
+                    <p class="section__name">Git</p>
                 </li>
                 <li>
-                    <img src="./assets/react-icon.svg" alt="react">
-                    <p>React</p>
+                    <img src="./assets/React.svg" alt="react">
+                    <p class="section__name">React</p>
                 </li>
             </ul>
         </div>
     </section>
+
+    <section class="container section__content" id="tools">
+        <h2>Herramientas</h2>
+
+        <div>
+            <ul class="section__elements">
+                <li>
+                    <img src="./assets/Figma.svg" alt="figma">
+                    <p class="section__name">Figma</p>
+                </li>
+                <li>
+                    <img src="./assets/logo-sass-svgrepo-com 1.svg" alt="sass">
+                    <p class="section__name">SASS</p>
+                </li>
+                <li>
+                    <img src="./assets/material-ui-1 1.svg" alt="material ui">
+                    <p class="section__name">Material UI</p>
+                </li>
+                <li>
+                    <img src="./assets/webpack-svgrepo-com 1.svg" alt="webpack">
+                    <p class="section__name">Webpack</p>
+                </li>
+                <li>
+                    <img src="./assets/npm.svg" alt="npm">
+                    <p class="section__name">Npm</p>
+                </li>
+                <li>
+                    <img src="./assets/visual-studio-code-logo-svgrepo-com 1.svg" alt="visual studio code">
+                    <p class="section__name">Vs Code</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="container section__content" id="projects">
+        <h2>Proyectos</h2>
+
+        <div>
+            <ul class="section__elements">
+                <li class="project">
+                    <a href="https://criptomonedas-react-project.netlify.app/" target="_blank" rel="noopener noreferrer">
+                        <figure class="project__figure" >
+                            <img src="https://d33wubrfki0l68.cloudfront.net/60bbc08cfde2efff275fbad5/screenshot_2021-06-05-18-21-02-0000.png" alt="react cripto monedas">
+                            <div class="capa"></div>
+                        </figure>
+                    </a>
+                </li>
+                <li class="project">
+                    <a href="https://rockadnedmfestival.netlify.app/" target="_blank" rel="noopener noreferrer">
+                        <figure class="project__figure" >
+                            <img src="https://d33wubrfki0l68.cloudfront.net/605d4051d675720007f92096/screenshot.png" alt="Rock & EDM Festival">
+                            <div class="capa"></div>
+                        </figure>
+                    </a>
+                </li>
+                <li class="project">
+                    <a href="https://proyecto-presupuesto-reactjs.netlify.app/" target="_blank" rel="noopener noreferrer">
+                        <figure class="project__figure" >
+                            <img src="https://d33wubrfki0l68.cloudfront.net/60b167136abff9365c78979e/screenshot_2021-05-28-21-56-37-0000.png" alt="Gasto Semanal">
+                            <div class="capa"></div>
+                        </figure>
+                    </a>
+                </li>
+                <li class="project">
+                    <a  href="https://app-clima-reactjs.netlify.app/" target="_blank" rel="noopener noreferrer">
+                        <figure class="project__figure" >
+                            <img src="https://d33wubrfki0l68.cloudfront.net/60b84bc06e05a26aeb4f267d/screenshot_2021-06-03-03-25-53-0000.png" alt="Clima React">
+                            <div class="capa"></div>
+                        </figure>
+                    </a>
+                </li>
+                <li class="project">
+                    <a href="https://heroes-react-app.netlify.app/" target="_blank" rel="noopener noreferrer">
+                        <figure class="project__figure" >
+                            <img src="https://d33wubrfki0l68.cloudfront.net/6159021c39fa29583176c10c/screenshot_2021-10-03-01-07-38-0000.png" alt="Heroes App">
+                            <div class="capa"></div>
+                        </figure>
+                    </a>
+                </li>
+                <li class="project">
+                    <a href="https://bienes-races-page.netlify.app" target="_blank" rel="noopener noreferrer">
+                        <figure class="project__figure" >
+                            <img src="https://d33wubrfki0l68.cloudfront.net/605a968bfccaa60007057782/screenshot.png" alt="react cripto monedas">
+                            <div class="capa"></div>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="container section__content" id="contact">
+        <h2>Contáctame</h2>
+
+        <div>
+            <ul class="network__list">
+                <li>
+                    <a href="https://www.linkedin.com/in/jonathan-ruiz-b810531bb/" target="_blank" rel="noopener noreferrer">
+                        <img class="network" src="./assets/LinkedIN.svg" alt="LinkedIn" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/JotaErrE01" target="_blank" rel="noopener noreferrer">
+                        <img class="network" src="./assets/Github.svg" alt="Github" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/Jota_ErrE_01" target="_blank" rel="noopener noreferrer">
+                        <img class="network" src="./assets/Twitter.svg" alt="Twitter" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <p>Hecho por <span>Jonathan Ruiz R.</span> 👨‍💻 </p>
+        </div>
+    </footer>
 </body>
 </html>

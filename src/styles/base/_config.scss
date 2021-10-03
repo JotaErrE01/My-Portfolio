@@ -3,6 +3,7 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+    scroll-behavior: smooth; // scroll smooth
 }
 
 *, *:before, *:after {
@@ -10,5 +11,5 @@ html {
 }
 
 body{
-    font-family: 'karla';
+    font-family: 'karla', Helvetica, sans-serif, Arial;
 }

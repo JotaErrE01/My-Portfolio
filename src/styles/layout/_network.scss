@@ -1,0 +1,19 @@
+.network__list{
+    list-style: none;
+    padding: 0;
+
+    @include grid ( 3, 1fr );
+}
+
+.network{
+
+    width: 6rem;
+
+    @include tablet{
+        width: 8rem;
+    }
+
+    @include desktop{
+        width: 15rem;
+    }
+}

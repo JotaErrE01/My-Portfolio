@@ -1,29 +1,39 @@
 .mainContent{
-    margin-top: $mt-5;
-    // display: flex;
 
-    @include grid(2, 50%);
+    // margin-top: 0;
+    margin-top: 2rem;
 
-    @include tablet{
-
+    @include desktop{
+        margin-top: $mt-5;
+        @include grid(2, 1fr);
     }
 }
 
 .me_image{
     text-align: center;
     img{
-        border-radius: 50%;
         border: 1px solid darken($color: $primary, $amount: 50);
-        width: 35rem;
+        border-radius: 50%;
+        width: 30rem;
+
+        @include tablet{
+            width: 35rem;
+            // transform: scaleX(-1);
+        }
     }
 }
 
 .aboutMe__info{
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    // text-align: center;
-    // h2 {
-    //     font-size: ;
-    // }
+    display: flex;
+
+    h2{
+        margin-top: 2rem;
+    }
+
+    p{
+        font-size: 1.7rem;
+        line-height: 1.7;
+        margin-bottom: 3rem;
+    }
 }
