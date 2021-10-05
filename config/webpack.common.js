@@ -8,7 +8,7 @@ module.exports = {
         filename: 'main.[contenthash].js',
         path: path.resolve(__dirname, '../dist'),
         clean: true,
-        assetModuleFilename: 'images/[hash][ext][query]',
+        assetModuleFilename: 'assets/svgs/[hash][ext][query]',
     },
     module: {
         rules: [
@@ -31,8 +31,11 @@ module.exports = {
                 loader: "html-loader",
             },
             {
-                test: /\.(svg|png|jpg)$/i,
+                test: /\.(pdf)$/i,
                 type: 'asset/resource',
+                generator: {
+                    filename: 'assets/resume/[hash][ext][query]'
+                }
             }
         ]
     },

@@ -1,5 +1,6 @@
 import "../public/index.html";
 import './styles/styles.scss';
+import PDF from "../public/assets/resume/Resume.pdf";
 
 // Selectors
 const $mainNav = document.querySelector('.nav-styles');
@@ -9,6 +10,7 @@ const $hamburguerMenu = document.querySelector('.menu');
 const $modalMenu = document.querySelector('.header__modal');
 const $modalClose = document.querySelector('.modal__close');
 const $mobileNavs = document.querySelectorAll('#nav__mobile');
+const $btn = document.querySelector('.btn-primary');
 
 const observer = new IntersectionObserver( entries => {
 
@@ -41,7 +43,6 @@ $mobileNavs.forEach( nav => {
     } );
 });
 
-
-// const $btn = document.querySelector('.btn');
-
-// $btn.addEventListener('click', console.log );
+$btn.addEventListener('click', () => {
+    window.open(PDF);
+});
