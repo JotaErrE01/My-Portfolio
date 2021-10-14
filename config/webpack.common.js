@@ -1,4 +1,4 @@
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+// const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
@@ -23,33 +23,25 @@ module.exports = {
                 }
             },
             {
-                test: /\.(css|sass|scss)$/i,
-                use: [ MiniCssExtractPlugin.loader, "css-loader", "sass-loader", ]
-            },
-            {
                 test: /\.html$/i,
                 loader: "html-loader",
             },
             {
                 test: /\.(pdf)$/i,
-                type: 'asset/resource',
+                type: 'asset',
                 generator: {
                     filename: 'assets/resume/[hash][ext][query]'
                 }
-            }
+            },
         ]
     },
     resolve: {
-        extensions: [ ".js" ]
+        extensions: [".js"]
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: "./public/index.html",
+            template: "public/index.html",
             // filename: "assets/index.html"
         }),
-        // new CopyPlugin
-        new MiniCssExtractPlugin({
-            filename: "styles/style.css"
-        })
     ]
 };

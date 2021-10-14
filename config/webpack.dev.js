@@ -8,6 +8,14 @@ const devConfig = {
         // contentBase: "../dist",
         // open: true o 'chrome'
         open: true
+    },
+    module: {
+        rules: [
+            {
+                test: /\.(css|sass|scss)$/i,
+                use: [ 'style-loader', "css-loader", "sass-loader" ]
+            },
+        ]
     }
 }
 

@@ -1,3 +1,4 @@
+// import '../public/assets/svgs/close_small.svg';
 import "../public/index.html";
 import './styles/styles.scss';
 import PDF from "../public/assets/resume/Resume.pdf";
@@ -9,7 +10,7 @@ const $aboutMeContainer = document.querySelector('#about_me');
 const $hamburguerMenu = document.querySelector('.menu');
 const $modalMenu = document.querySelector('.header__modal');
 const $modalClose = document.querySelector('.modal__close');
-const $mobileNavs = document.querySelectorAll('#nav__mobile');
+const $mobileNavs = document.querySelectorAll('.nav__mobile');
 const $btn = document.querySelector('.btn-primary');
 
 const observer = new IntersectionObserver( entries => {
